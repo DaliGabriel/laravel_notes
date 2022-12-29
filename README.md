@@ -12,3 +12,10 @@ php artisan migrate:fresh
 ```
 php artisan storage:link
 ```
+
+<h1>Crear un modelo, controlador y migracion al mismo tiempo</h1>
+
+```
+php artisan make:model -mrc nombre_del_recurso
+```
+
