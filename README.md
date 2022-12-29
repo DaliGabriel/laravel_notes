@@ -19,3 +19,9 @@ php artisan storage:link
 php artisan make:model -mrc nombre_del_recurso
 ```
 
+<h1>Crear un modelo y migraciones</h1>
+
+```
+php artisan make:model nombre_del_recurso -m
+```
+
