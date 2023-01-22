@@ -25,3 +25,16 @@ php artisan make:model -mrc nombre_del_recurso
 php artisan make:model nombre_del_recurso -m
 ```
 
+<h1>Para permitir recibir solicitudes se tiene que agregar la url de la aplicacion en el siguiente archivo </h1>
+
+```
+App\Http\Middleware\VerifyCsrfToken
+```
+<p>Agregar el siguiente codigo</p>
+
+```
+protected $except = [
+        '/urlDelArchivo',
+    ];
+```
+
