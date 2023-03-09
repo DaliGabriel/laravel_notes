@@ -38,3 +38,14 @@ protected $except = [
     ];
 ```
 
+<p>Funcion que automatiza el entorno de desarrollo con laravel y npm en powershell</p>
+
+```
+function Work {
+    $dirPath = "Aqui va el directorio de trabajo"
+    Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $dirPath; php artisan serve" 
+    Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $dirPath; npm run dev" 
+    Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $dirPath" 
+}
+```
+
